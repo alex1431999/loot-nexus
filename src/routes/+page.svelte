@@ -1,3 +1,10 @@
+<script lang="ts">
+	import Item from '../components/item.svelte';
+	import {items} from '$lib/data';
+</script>
+
 <div>
-	Hello :)
+	{#each items as item}
+		<Item item="{item}"></Item>
+	{/each}
 </div>
