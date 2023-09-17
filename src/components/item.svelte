@@ -8,4 +8,6 @@
 
 <div>
 	<span>{item.name}</span>
+
+	<input class="input w-20" bind:value={amount} type="number" />
 </div>
