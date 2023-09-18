@@ -1,5 +1,6 @@
 <script lang="ts">
 	import type { Item } from '../types.js';
+	import Textfield from "@smui/textfield";
 
 	export let item: Item;
 
@@ -7,7 +8,5 @@
 </script>
 
 <div>
-	<span>{item.name}</span>
-
-	<input class="input w-20" bind:value={amount} type="number" />
+	<Textfield type="number" label="{item.name}" bind:value={amount} ></Textfield>
 </div>
