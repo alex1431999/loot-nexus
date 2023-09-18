@@ -1,10 +1,10 @@
 <script lang="ts">
-	import Item from '../components/item.svelte';
-	import { items } from '$lib/data';
+	import PlayerList from '../components/player-list.svelte'
+	import type { Player } from '../types';
+
+	let players: Array<Player> = []
 </script>
 
 <div>
-	{#each items as item}
-		<Item {item} />
-	{/each}
+	<PlayerList bind:players={players}></PlayerList>
 </div>

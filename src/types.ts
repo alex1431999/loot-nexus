@@ -5,3 +5,7 @@ export interface Item {
 	stackable: boolean;
 	sellto: Array<string>;
 }
+
+export interface Player {
+	name: string;
+}
